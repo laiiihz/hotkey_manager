@@ -53,11 +53,24 @@ final Map<KeyModifier, String> _knownKeyLabels = <KeyModifier, String>{
 };
 
 enum KeyModifier {
+  /// CapsLock key
   capsLock,
+
+  ///Shift key
   shift,
+
+  /// Control key
   control,
-  alt, // Alt / Option key
-  meta, // Command / Win key
+
+  /// Alt key or Option key on Macintosh keyboards
+  alt,
+
+  /// The Meta key is a modifier key on certain keyboards.
+  ///
+  /// normally on windows is `Win key`,on macos is `command key`
+  meta,
+
+  /// Function Key
   fn,
 }
 
